@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "app\\classes\\": "classes/",
+      "app\\interfaces\\": "interfaces/",
+      "app\\abstractClasses\\": "abstractClasses/"
+    }
+  },
+  "require": {
+    "ext-curl": "*"
+  }
+}
