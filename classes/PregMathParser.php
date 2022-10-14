@@ -1,13 +1,16 @@
 <?php
-
+declare(strict_types=1);
 namespace app\classes;
 
 use app\abstractClasses\abstractParser;
 
+/**
+ * Обработка страницы при помощи регулярных выражений
+ */
 class PregMathParser extends abstractParser
 {
     /** Шаблон регулярного выражения **/
-    private $regEx = '/<([^\/>\s\.-]+)[^>;]*/imsu';
+    private $regEx = '/<(!DOCTYPE|!--|[^!\/\[\]>\s\.-]+)[^>;]*/imsu';
     
     /**
      * Метод для обработки скаченной страницы
